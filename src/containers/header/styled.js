@@ -69,8 +69,8 @@ export const Nav = styled(Link).attrs((props) => ({
   padding: 8px 4px;
   border-bottom: 2px solid transparent;
   color: ${(props) => props.theme.colors.foreground1};
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: 500 !important;
+  font-size: 16px !important;
   @media (min-width: 1280px) {
     font-size: 16px !important;
   }
