@@ -116,7 +116,7 @@ const BrandContainer = styled(Box)`
 export const Brand = () => (
   <BrandContainer>
     <span className="mark">{'>'}</span>
-    <span className="name">eschmidt</span>
+    <span className="name">edufschmidt</span>
     <span className="cursor" />
   </BrandContainer>
 )
