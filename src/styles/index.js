@@ -18,6 +18,9 @@ const GlobalStyles = createGlobalStyle`
 
     body {
         height: 100%;
+        * {
+            font-family: Lato!important;
+        }
     }
 
     body::-webkit-scrollbar {
