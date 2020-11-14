@@ -34,7 +34,9 @@ const StyledStrong = styled(StyledParagraph)`
   font-weight: bold;
 `
 
-const StyledSeparator = styled(Separator)`
+const StyledSeparator = styled(Separator).attrs({
+  bg: 'border1',
+})`
   font-weight: bold;
 `
 
