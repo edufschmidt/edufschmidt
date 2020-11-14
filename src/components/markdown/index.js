@@ -19,8 +19,8 @@ const StyledHeading = styled(Text).attrs(() => ({
   textStyle: 'title',
 }))`
   font-size: ${(props) => 46 - 8 * props.level}px;
-  margin-bottom: ${(props) => 24 - 8 * props.level}px;
-  margin-top: ${(props) => 24 - 8 * props.level}px;
+  margin-bottom: ${(props) => (props.level === 1 ? 24 : 16)}px;
+  margin-top: ${(props) => (props.level === 1 ? 24 : 16)}px;
   letter-spacing: 2px;
 `
 
@@ -49,7 +49,7 @@ const StyledImage = styled.img`
 // eslint-disable-next-line react/prop-types
 const StyledListItem = ({ children, ...props }) => (
   <li>
-    <StyledParagraph {...props}>
+    <StyledParagraph my={1} {...props}>
       {'•  '}
       {children}
     </StyledParagraph>
@@ -57,7 +57,8 @@ const StyledListItem = ({ children, ...props }) => (
 )
 
 const StyledList = styled(List)`
-  margin: 16px 24px;
+  margin: 0px 24px;
+  flex-direction: column;
 `
 
 const config = {
