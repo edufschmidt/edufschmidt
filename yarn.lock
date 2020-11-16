@@ -9921,6 +9921,11 @@ styled-components@^4.3.1:
     stylis-rule-sheet "^0.0.10"
     supports-color "^5.5.0"
 
+styled-react-modal@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/styled-react-modal/-/styled-react-modal-2.0.1.tgz#513d47bdbdba67f474a8a4dfeb13d072a172c7fc"
+  integrity sha512-uoyPlwdM8FLmdOE8dvA3iv2IOnlqMsygPxLAZy8WaK0pEcon67+SWJY/osAWZuBvRKtSo/VXn1fRCYVgbD0KUQ==
+
 styled-reset@^2.0.15:
   version "2.0.17"
   resolved "https://registry.yarnpkg.com/styled-reset/-/styled-reset-2.0.17.tgz#b0eb9e3dc9db082c248b9f7b3d8b55d764b61a39"

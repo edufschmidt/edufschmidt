@@ -28,10 +28,16 @@ const StyledParagraph = styled(Text).attrs({
   textStyle: 'body',
 })`
   display: inline;
+  width: 100%;
+  text-align: justify;
 `
 
 const StyledStrong = styled(StyledParagraph)`
   font-weight: bold;
+`
+
+const StyledEmphasis = styled(StyledParagraph)`
+  font-style: italic;
 `
 
 const StyledSeparator = styled(Separator).attrs({
@@ -61,11 +67,23 @@ const StyledList = styled(List)`
   flex-direction: column;
 `
 
+const StyledLink = styled.a`
+  display: inline;
+  font-weight: bold;
+  text-decoration: none;
+  color: inherit;
+  :visited {
+    color: inherit;
+  }
+`
+
 const config = {
   renderers: {
+    link: StyledLink,
     root: Container,
     paragraph: StyledParagraph,
     strong: StyledStrong,
+    emphasis: StyledEmphasis,
     heading: StyledHeading,
     thematicBreak: StyledSeparator,
     image: StyledImage,

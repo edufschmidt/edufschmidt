@@ -8,11 +8,24 @@ import Icon from '_components/icon'
 
 import { icons, photos } from '_assets'
 import { useLocation } from '@reach/router'
+import Markdown from '_components/markdown'
 
 const Container = styled(Box)`
   flex-direction: column;
   align-items: center;
-  padding-top: 30%;
+
+  // Laptops and above
+  @media (min-width: 1280px) {
+    padding-top: 120px;
+  }
+`
+
+const StyledMarkdown = styled(Markdown)`
+  * {
+    text-align: center;
+    line-height: 32px;
+    margin-bottom: 16px;
+  }
 `
 
 const SocialContainer = styled(Box)`
@@ -50,10 +63,11 @@ const Home = ({ content }) => {
       <Text textStyle="title" mb={3}>
         {profile.title}
       </Text>
-      <Text textStyle="body" mb={3} style={{ textAlign: 'center', lineHeight: '32px' }}>
-        {profile.subtitle}
-      </Text>
+      <StyledMarkdown mb={3}>{profile.subtitle}</StyledMarkdown>
       <Box>
+        {profile.social.email && (
+          <Social url={profile.social.email} icon={<icons.Email />} m={2} color="foreground1" />
+        )}
         {profile.social.github && (
           <Social url={profile.social.github} icon={<icons.GitHub />} m={2} color="foreground1" />
         )}

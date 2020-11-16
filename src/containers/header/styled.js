@@ -11,6 +11,7 @@ height: 72px;
 display: flex;
 position: fixed;
 box-sizing: border-box;
+align-items: center;
 background: ${(props) => props.theme.colors.background1};
 justify-content: space-between;
 top: 0; right: 0; left: 0;
@@ -52,6 +53,36 @@ z-index: 99;
   ${grid}
 
   z-index: 99;
+`
+
+export const MobileMenu = styled(Box)`
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: grid;
+  grid-template: 72px 1fr auto / 1fr;
+
+  padding: 0 0;
+
+  background-color: ${(props) => props.theme.colors.background1};
+
+  #close-btn {
+    padding: 0;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+  }
+
+  a {
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 `
 
 export const NavItems = styled(Box)`

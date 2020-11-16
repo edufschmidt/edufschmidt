@@ -12,6 +12,8 @@ import { ReactComponent as LinkedIn } from './linkedin.svg'
 import { ReactComponent as Scholar } from './scholar.svg'
 import { ReactComponent as Theme } from './theme.svg'
 import { ReactComponent as Search } from './search.svg'
+import { ReactComponent as Email } from './email.svg'
+import { ReactComponent as Hamburger } from './hamburger.svg'
 
 export default {
   Logo,
@@ -28,4 +30,6 @@ export default {
   Scholar,
   LinkedIn,
   StackOverflow,
+  Hamburger,
+  Email,
 }

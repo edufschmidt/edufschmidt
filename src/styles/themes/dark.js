@@ -9,7 +9,7 @@ const colors = {
   accent1: 'rgb(0, 199, 139)',
   accent2: 'rgb(0, 199, 139)',
 
-  border1: '#dcdcdc',
+  border1: 'rgba(255, 255, 255, 0.1)',
   border2: '#dcdcdc',
 }
 

@@ -27,6 +27,7 @@
     "react-use-localstorage": "^3.5.3",
     "reading-time": "^1.2.0",
     "styled-components": "^4.3.1",
+    "styled-react-modal": "^2.0.1",
     "styled-reset": "^2.0.15",
     "styled-system": "^5.0.6"
   },

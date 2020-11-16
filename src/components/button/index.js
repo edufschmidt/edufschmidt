@@ -26,7 +26,6 @@ const Button = styled.button`
 Button.defaultProps = {
   variant: 'primary',
   boxShadow: 'light',
-  width: '120px',
   height: '48px',
 }
 

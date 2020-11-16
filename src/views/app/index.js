@@ -44,6 +44,8 @@ const Dashboard = styled.div`
 const Content = styled(Router).attrs({ primary: false })`
   grid-area: body;
 
+  box-sizing: border-box;
+
   display: flex;
   flex-direction: column;
   margin-left: auto;
@@ -54,6 +56,15 @@ const Content = styled(Router).attrs({ primary: false })`
 
   max-width: 680px;
   width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  // Laptops and above
+  @media (min-width: 1280px) {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
 `
 
 const loadContent = () => {
@@ -90,7 +101,7 @@ const App = () => {
           <Home path="/" content={home} />
           <About path="/about" content={about} />
           <Portfolio path="/projects/*" header={projectsHeader} content={projects} />
-          <Resume path="/resume" content={resume} />
+          <Resume path="/cv" content={resume} />
           <NotFound default />
         </Content>
         <Footer gridArea="footer" />
