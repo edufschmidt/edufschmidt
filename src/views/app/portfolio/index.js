@@ -11,6 +11,7 @@ const Portfolio = ({ header, content }) => {
 
   useEffect(() => {
     window.scrollTo(0, 0)
+    document.title = 'Eduardo Schmidt | Projects'
   }, [location])
 
   useEffect(() => {

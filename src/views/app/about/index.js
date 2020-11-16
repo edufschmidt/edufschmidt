@@ -23,6 +23,7 @@ const About = ({ content }) => {
 
   useEffect(() => {
     window.scrollTo(0, 0)
+    document.title = 'Eduardo Schmidt | About'
   }, [location])
 
   return (
