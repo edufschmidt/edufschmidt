@@ -1,6 +1,6 @@
 ---
 title: Welcome!
-subtitle: Hi! I am a Control and Automation Engineer with strong interest in mobile robotics. I received my master's degree in Automation and Systems from [UFSC](https://en.ufsc.br/) working on sensor fusion and state estimation under supervision of [Prof. Alexandre Trofino](http://trofino.das.ufsc.br/en/).
+subtitle: Hi! I am a Control and Automation Engineer with strong interest in robotics perception, control, and edge computing. I received my master's degree in Automation and Systems from [UFSC](https://en.ufsc.br/) working on sensor fusion and state estimation under supervision of [Prof. Alexandre Trofino](http://trofino.das.ufsc.br/en/).
 social:
     email: mailto:edufschmidt@gmail.com
     github: https://github.com/edufschmidt
